@@ -69,7 +69,7 @@ $users = mysqli_query($conn, "SELECT * FROM users");
             <td><?= $user ['email'] ?></td>
             <td><?= $user ['password'] ?></td>
             <td>
-            <a href=""class="btn btn-primary">Delete</a>
+            <a href="./delete.php?id=<?=$user['id']?>"class="btn btn-primary">Delete</a>
             <a href="./edit.php?id=<?=$user['id']?>" class="btn btn-danger">Edit</a>
           
           </td>
